@@ -42,13 +42,13 @@ class Song
     self.all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename(file_name)
-    blueleo = yup.split(/\s(-)\s|(.mp3)/)
-    new_song = self.new
-    song.artist_name = blueleo[0]
-    song.name = blueleo[2]
-    return song
-  end
+  def self.new_from_filename(yup)
+  chopped = yup.split(/\s(-)\s|(.mp3)/)
+  song = Song.new
+  song.artist_name = chopped[0]
+  song.name = chopped[2]
+  return song
+end
 
 
 
