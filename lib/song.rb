@@ -7,8 +7,9 @@ class Song
     @@all << self
 
   def self.create
-    song = self.new
-    self.save
+    song = self.create
+    self.all.include?(name)
+    song.save
   end
 end
 
