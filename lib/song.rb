@@ -6,10 +6,10 @@ class Song
     @name = name
     @@all << self
 
-  def self.create
-    song = self.create
-    self.all.include?(name)
-    song.save
+  def Song.create
+    song = Song.create
+    Song.all.include?
+    Song.save
   end
 end
 
