@@ -57,6 +57,10 @@ end
   song.name = blueleo[2]
   song.save
 end
+  def self.destroy_all
+    @@all = clear_all
+  end
+end
 
 
 
