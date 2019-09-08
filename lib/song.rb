@@ -16,7 +16,7 @@ class Song
 
   def self.all
     @@all
-    # @@people
+    @@people
   end
 
   def self.find_by_name(name)
