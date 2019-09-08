@@ -46,7 +46,7 @@ class Song
     new_song = self.new
     song.artist_name = blueleo[0]
     song.name = blueleo[2]
-    return song 
+    return song
   end 
 
 
