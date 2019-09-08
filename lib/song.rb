@@ -8,7 +8,7 @@ class Song
 
   def Song.create
     song = Song.create
-    Song.all.include?
+    @@all
     Song.save
   end
 end
