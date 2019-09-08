@@ -8,7 +8,10 @@ class Song
 
   def self.all
     @@all
-  end 
+  end
+  def self.create
+    @all << self 
+  end
 
   def save
     self.class.all << self
