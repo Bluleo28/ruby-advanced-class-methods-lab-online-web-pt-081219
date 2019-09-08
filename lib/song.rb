@@ -43,11 +43,15 @@ class Song
   end
 
   def self.new_from_filename(file_name)
+    blueleo = yup.split(/\s(-)\s|(.mp3)/)
     new_song = self.new
     song.artist_name = blueleo[0]
     song.name = blueleo[2]
     return song
-  end 
+  end
+
+
+
 
 
 
