@@ -3,7 +3,7 @@ class Song
   @@all = []
 
   def self.all
-  @@all
+   @@all
   end
 
   def save
@@ -11,20 +11,18 @@ class Song
   end
 
   def self.create
-    song = self.new
-    save
-    end
-
-  def self.create_by_name
-    song = self.new_by_name
-    song.name = song_name
-    song.save
-    song
+    new_song = self.new
+    @@all << new_song
+    new_song
   end
 
-  def self.new_by_name(name)
-    @@all.find{|person| person.name == name}
-    @@people.find{|people|person.name == name}
+  def self.create_by_name(song_name)
+    new_song = self.new_by_name
+    song.name = song_name
+    new_song
+  end
+
+  def self.new_by_name(song_name)
   end
 
 
